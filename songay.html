@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+
+
+<br>
+<input type="number" id="nhapthang" name="nhap thang" value="">
+<button type="button" onclick="nhapthang()">tinh so ngay</button>
+
+<p>so ngay la <span id'result'></span></p>
+<script>
+    function nhapthang() {
+        let month = document.getElementById('nhapthang').value
+
+
+        switch (month) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+
+                document.write(' có 31 ngày');
+                break;
+            case '2':
+                document.write('tháng 2 có 28 hoặc 29  ngày');
+                break;
+            case '2':
+            case '4':
+            case '6':
+            case '9':
+            case '10':
+            case '10':
+
+                document.write('có 30 ngày')
+
+        }
+    }
+</script>
+
 </body>
 </html>
